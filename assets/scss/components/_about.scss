@@ -1,0 +1,41 @@
+.about {
+    height: 330px;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+
+    .profile-img {
+        position: absolute;
+        height: 180px;
+        width: 180px;
+        overflow: hidden;
+        z-index: -1;
+        border-radius: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        img {
+            object-fit: cover;
+            object-position: left;
+        }
+    }
+
+    p {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        color: $font-secondary;
+    }   
+}
+
+
+.sosmed {
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            padding: 0px 10px;
+        }
+    }
+}
